@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import CardList from '../Components/CardList';
 import SearchBox from '../Components/SearchBox';
 import Scroll from '../Components/Scroll';
-import ErrorBoundry from '../Components/ErrorBoundry';
 import './App.css';
 
 //STATE - THE DESCRIPTION OF YOUR APP (OBJECT THAT DESCRIBES THE APP) - ABLE TO CHANGE. lIVES IN THE APRENT COMPONENT.
@@ -41,9 +40,7 @@ class App extends Component {
                 <h1 className='f1'>Robofriends</h1>
                 <SearchBox searchChange={this.onSearchChange} />
                 <Scroll>
-                    <ErrorBoundry>
-                        <CardList robots={filteredRobots}/>
-                    </ErrorBoundry>
+                <CardList robots={filteredRobots}/>
                 </Scroll>
             </div>
             );
