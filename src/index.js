@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// ./index.css means it is in the same folder 
+import App from './Containers/App';
 import * as serviceWorker from './serviceWorker';
+import 'tachyons';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );
